@@ -23,6 +23,9 @@
         <h2 class='title'>
     <a href="/posts/{{ $post->id }}">{{ $post->title }}</a>
         </h2>
+        
+        [<a href='/posts/create'>create</a>]
+        
 
         
     </body>
