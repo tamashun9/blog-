@@ -31,11 +31,15 @@ class PostController extends Controller
     
     public function edit(Post $post)
     {
+dev_basis06
         return view('posts/edit')->with(['post' => $post]);
+
+ 
     }
     
     public function update(PostRequest $request, Post $post)
     {
+dev_basis06
         $input_post = $request['post'];
         $post->fill($input_post)->save();
 
@@ -46,6 +50,7 @@ class PostController extends Controller
     {   
         $post->delete();
         return redirect('/');
+
     }
 }
 ?>
